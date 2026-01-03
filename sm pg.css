@@ -1,0 +1,135 @@
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+    animation: smoothAppear 1.5s ease-out both;
+}
+
+/* ===== HEADER ===== */
+.custom-header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    animation: slideDown 1s ease-out;
+}
+
+.custom-header h1 {
+    animation: glow 2.5s infinite ease-in-out;
+}
+
+/* ===== SECTION ===== */
+.custom-section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FOOTER ===== */
+.custom-footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
+    animation: slideUp 1s ease-out;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+    width: 150px;
+    height: 200px;
+    border-radius: 50% / 25%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    transition: transform 0.6s ease, box-shadow 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(10, 10, 255, 0.7);
+}
+
+.profile-picc {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #2d085ac2;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.karya-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #333;
+}
+
+/* ===== MAP ===== */
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes slideDown {
+    from {opacity: 0; transform: translateY(-40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes glow {
+    0%,100% { text-shadow: 0 0 10px #fff; }
+    50% { text-shadow: 0 0 20px #0077ff; }
+}
+
+@keyframes smoothAppear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
